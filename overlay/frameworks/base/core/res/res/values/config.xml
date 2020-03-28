@@ -164,4 +164,7 @@
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+     <!-- Enable face auth only when swiping security view -->
+     <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
+
 </resources>
