@@ -1,4 +1,4 @@
-# Copyright (C) 2021 The OmniROM Project
+# Copyright (C) 2021 The aospROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,16 +21,21 @@
 
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
-# must be before including omni part
-TARGET_BOOTANIMATION_SIZE := 1080p
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-$(call inherit-product, device/motorola/sm6150_common/omni-sm6150_common.mk)
+# PixelExperience Properties
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_AOSP_RECOVERY := true
+
+$(call inherit-product, device/motorola/sm6150_common/aosp-sm6150_common.mk)
 $(call inherit-product, device/motorola/liber/device.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_liber
+PRODUCT_NAME := aosp_liber
 PRODUCT_DEVICE := liber
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
@@ -38,11 +43,6 @@ PRODUCT_MODEL := motorola one fusion +
 
 TARGET_DEVICE := MotoOneFusion+
 PRODUCT_SYSTEM_NAME := MotoOneFusion+
-
-VENDOR_RELEASE := 10/QPIS30.73-33-2/90024:user/release-keys
-BUILD_FINGERPRINT := motorola/liber_retail/liber:$(VENDOR_RELEASE)
-OMNI_BUILD_FINGERPRINT := motorola/liber_retail/liber:$(VENDOR_RELEASE)
-OMNI_PRIVATE_BUILD_DESC := "'liber_retail-user 10QPIS30.73-33-2 90024 release-keys'"
 
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2021-01-01
 
