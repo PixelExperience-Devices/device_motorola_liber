@@ -82,14 +82,3 @@ if [ -f $calib_data_file ]; then
 else
 	notice "laser calib_data_file '$calib_data_file' does not exist"
 fi
-
-bootmode=$(getprop ro.bootmode 2> /dev/null)
-if [ $bootmode != "mot-factory" ]; then
-	# Enable smudge mode
-	echo 1 > $laser_product_path/smudge_correction_mode
-	notice "laser smudge mode enabled"
-else
-	# Disable smudge mode
-	echo 0 > $laser_product_path/smudge_correction_mode
-	notice "factory-mode boot, disable laser smudge mode"
-fi
