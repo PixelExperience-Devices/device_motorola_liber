@@ -21,9 +21,8 @@ DEVICE_PATH := device/motorola/liber
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-# FM
-BOARD_HAVE_QCOM_FM := true
-BOARD_HAS_QCA_FM_SOC := "cherokee"
-
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/liber_defconfig
+
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
