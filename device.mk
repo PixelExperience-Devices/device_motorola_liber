@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mmi.laser.sh \
     init.mmi.overlay.rc
 
 # Sensors
