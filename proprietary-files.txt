@@ -229,7 +229,6 @@ vendor/lib64/camera/components/com.vidhance.node.eis.so
 vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/lib64/camera/components/libmmcamera_cac3.so
-vendor/lib64/hw/com.qti.chi.override.so
 product/lib64/libarcsoftbase.so
 product/lib64/libarcsoftcalibration_jni.so
 product/lib64/libarcsoft_dualcam_phone_calibration.so
@@ -280,6 +279,9 @@ vendor/lib64/libmulticam_optical_zoom_control.so
 vendor/lib64/libmulticam_video_optical_zoom.so
 vendor/lib64/libarcsoft_zoomtranslator_imp.so
 vendor/lib64/libfcell.so
+
+# MOTOCAM
+vendor/lib64/hw/com.qti.chi.override.so
 
 # POPUP
 vendor/bin/hw/motorola.hardware.popup.akm@1.0-service
