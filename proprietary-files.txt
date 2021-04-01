@@ -291,7 +291,14 @@ lib/motorola.hardware.popup@1.0.so
 lib64/motorola.hardware.popup@1.0.so
 
 # Sensors
+vendor/bin/sensors.qti
 vendor/bin/capsense_reset
+vendor/lib/libssc.so
+vendor/lib64/libssc.so
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib/libsensorcal.so
+vendor/lib64/libsensorcal.so
 vendor/etc/sensors/config/default_sensors.json
 vendor/etc/sensors/config/icm4x6xx_0.json
 vendor/etc/sensors/config/lsm6ds3c_0.json
