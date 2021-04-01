@@ -281,6 +281,9 @@ vendor/lib64/libmulticam_video_optical_zoom.so
 vendor/lib64/libarcsoft_zoomtranslator_imp.so
 vendor/lib64/libfcell.so
 
+# OEM
+vendor/etc/vhw.xml
+
 # POPUP
 vendor/bin/hw/motorola.hardware.popup.akm@1.0-service
 vendor/lib64/motorola.hardware.popup@1.0.so
