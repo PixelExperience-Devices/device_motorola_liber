@@ -47,7 +47,9 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mmi.overlay.rc
+    init.mmi.overlay.rc \
+    init.oem.fingerprint.sh \
+    init.oem.fingerprint2.sh
 
 # Sensors
 PRODUCT_PACKAGES += \
