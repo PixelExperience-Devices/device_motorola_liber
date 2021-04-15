@@ -10,6 +10,7 @@ binder_call(hal_motpopup_client, hal_motpopup_server)
 # Create HIDL interface for motpopup HAL
 hal_attribute_hwservice(hal_motpopup, hal_motpopup_hwservice)
 
-# Allow hal_motpopup_default to create files in mnt/vendor/persist/camera
-allow hal_motpopup_default mnt_vendor_persist_camera:dir rw_dir_perms;
-allow hal_motpopup_default mnt_vendor_persist_camera:file create_file_perms;
+# Allow hal_motpopup_default to create files in mnt/vendor/
+allow hal_motpopup_default mnt_vendor_file:dir rw_dir_perms;
+allow hal_motpopup_default mnt_vendor_file:file create_file_perms;
+
