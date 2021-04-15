@@ -1,1 +1,5 @@
-motorola.hardware.popup::IMotoPopup                          u:object_r:hal_motpopup_hwservice:s0
+# Popup
+motorola.hardware.popup::IMotoPopup                                                     u:object_r:hal_motpopup_hwservice:s0
+
+# Fingerprint
+com.motorola.hardware.biometric.fingerprint::IMotoFingerPrint                           u:object_r:hal_fingerprint_hwservice:s0
