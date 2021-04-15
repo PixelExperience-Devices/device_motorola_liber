@@ -8,10 +8,8 @@ init_daemon_domain(hal_motpopup_default)
 binder_call(hal_motpopup_client, hal_motpopup_server)
 
 # Create HIDL interface for motpopup HAL
-add_hwservice(hal_motpopup_server, hal_motpopup_hwservice)	
-allow hal_motpopup_client hal_motpopup_hwservice:hwservice_manager find;
+hal_attribute_hwservice(hal_motpopup, hal_motpopup_hwservice)
 
 # Allow hal_motpopup_default to create files in mnt/vendor/persist/camera
 allow hal_motpopup_default mnt_vendor_persist_camera:dir rw_dir_perms;
 allow hal_motpopup_default mnt_vendor_persist_camera:file create_file_perms;
-
