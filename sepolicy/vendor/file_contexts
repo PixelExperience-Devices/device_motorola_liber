@@ -2,7 +2,18 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-goodixservice                   u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint
-/dev/goodix_fp                  u:object_r:fingerprint_device:s0
-/data/vendor/goodix(/.*)?       u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/fpc(/.*)?          u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/.fps(/.*)?         u:object_r:fingerprint_vendor_data_file:s0
+/dev/goodix_fp                                                                                                 u:object_r:fingerprint_device:s0
+/data/vendor/goodix(/.*)?                                                                                      u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/fpc(/.*)?                                                                                         u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/.fps(/.*)?                                                                                        u:object_r:fingerprint_vendor_data_file:s0
+
+# Popup
+/sys/devices/platform/soc/soc\:moto_aw8646_support/(/.*)?		                                               u:object_r:sysfs_popup:s0
+/sys/devices/platform/soc/soc\:moto_aw8646_support/aw8646/control/(/.*)?		                               u:object_r:sysfs_popup:s0   
+
+# Motor HAL
+/sys/devices/platform/soc/a8c000.i2c/i2c-2/2-000d/akm09970/control/(/.*)?		                               u:object_r:sysfs_popup:s0
+/vendor/bin/hw/motorola\.hardware\.popup\.akm@1\.0-service                                                     u:object_r:hal_motpopup_default_exec:s0
+
+# Capsense
+/sys/class/capsense(/.*)?		                                                                               u:object_r:sysfs_capsense:s0

@@ -1,0 +1,3 @@
+attribute hal_motpopup;
+attribute hal_motpopup_client;
+attribute hal_motpopup_server;

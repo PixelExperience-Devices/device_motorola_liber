@@ -1,0 +1,17 @@
+type hal_motpopup_default, domain;	
+hal_server_domain(hal_motpopup_default, hal_motpopup)
+
+type hal_motpopup_default_exec, exec_type, vendor_file_type, file_type;	
+init_daemon_domain(hal_motpopup_default)
+
+# HwBinder IPC from client to server
+binder_call(hal_motpopup_client, hal_motpopup_server)
+
+# Create HIDL interface for motpopup HAL
+add_hwservice(hal_motpopup_server, hal_motpopup_hwservice)	
+allow hal_motpopup_client hal_motpopup_hwservice:hwservice_manager find;
+
+# Allow hal_motpopup_default to create files in mnt/vendor/
+allow hal_motpopup_default mnt_vendor_file:dir rw_dir_perms;
+allow hal_motpopup_default mnt_vendor_file:file create_file_perms;
+
