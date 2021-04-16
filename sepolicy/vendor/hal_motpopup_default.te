@@ -14,3 +14,19 @@ allow hal_motpopup_client hal_motpopup_hwservice:hwservice_manager find;
 # Allow hal_motpopup_default to create files in mnt/vendor/
 allow hal_motpopup_default mnt_vendor_file:dir rw_dir_perms;
 allow hal_motpopup_default mnt_vendor_file:file create_file_perms;
+
+allow hal_motpopup_default input_device:dir read;
+allow hal_motpopup_default input_device:dir open;
+allow hal_motpopup_default input_device:dir search;
+allow hal_motpopup_default input_device:chr_file read;
+allow hal_motpopup_default input_device:chr_file open;
+
+allow hal_motpopup_default hal_camera_default:binder call;
+allow hal_motpopup_default input_device:chr_file ioctl;
+
+allow hal_motpopup_default sysfs:file open;
+allow hal_motpopup_default sysfs:file { read write };
+
+allow hal_motpopup_default uhid_device:chr_file write;
+allow hal_motpopup_default uhid_device:chr_file open;
+allow hal_motpopup_default uhid_device:chr_file ioctl;

@@ -1,0 +1,3 @@
+allow capsense_reset sysfs_capsense:dir search;
+allow capsense_reset sysfs_capsense:file write;
+allow capsense_reset sysfs_capsense:file open;
