@@ -17,15 +17,18 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from liber device
 $(call inherit-product, device/motorola/liber/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_liber
+PRODUCT_NAME := aosp_liber
 PRODUCT_DEVICE := liber
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Motorola One Fusion+
@@ -39,7 +42,6 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "motorola/liber_retail/liber:10/QPIS30.73-33-6/fffd8e:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=liber_retail \
     PRIVATE_BUILD_DESC="liber_retail-user 10 QPIS30.73-33-6 fffd8e release-keys"

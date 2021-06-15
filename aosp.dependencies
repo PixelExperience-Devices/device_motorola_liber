@@ -1,0 +1,32 @@
+[
+  {
+    "repository"  : "vendor_motorola_liber",
+    "target_path" : "vendor/motorola/liber",
+    "branch"      : "eleven",
+    "remote"      : "pixel-devices-blobs"
+  },
+  {
+    "repository"  : "device_motorola_sm6150-common",
+    "target_path" : "device/motorola/sm6150-common",
+    "branch"      : "eleven-plus",
+    "remote"      : "pixel-devices"
+  },
+  {
+    "repository"  : "kernel_motorola_sm6150",
+    "target_path" : "kernel/motorola/sm6150",
+    "branch"      : "eleven",
+    "remote"      : "pixel-devices"
+  },
+  {
+    "repository"  : "vendor_motorola_sm6150-common",
+    "target_path" : "vendor/motorola/sm6150-common",
+    "branch"      : "eleven-plus",
+    "remote"      : "pixel-devices-blobs"
+  },
+  {
+    "repository"  : "hardware_motorola",
+    "target_path" : "hardware/motorola",
+    "branch"      : "eleven",
+    "remote"      : "pixel-devices"
+  }
+]
