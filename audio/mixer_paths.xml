@@ -2635,7 +2635,7 @@
 
     <path name="handset-mic">
         <path name="amic1" />
-	<ctl name="ADC1 Volume" value="8" />
+	<ctl name="ADC1 Volume" value="20" />
     </path>
 
     <path name="headphones">
