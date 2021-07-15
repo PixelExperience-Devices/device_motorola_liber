@@ -8,7 +8,7 @@
   {
     "repository"  : "device_motorola_sm6150-common",
     "target_path" : "device/motorola/sm6150-common",
-    "branch"      : "eleven-plus",
+    "branch"      : "eleven",
     "remote"      : "pixel-devices"
   },
   {
