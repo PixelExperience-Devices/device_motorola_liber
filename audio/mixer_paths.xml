@@ -343,20 +343,20 @@
     <ctl name="TX SMIC MUX7" value="ZERO" />
 
     <!-- Volume controls -->
-    <ctl name="RX_RX0 Digital Volume" value="84" />
-    <ctl name="RX_RX1 Digital Volume" value="84" />
-    <ctl name="RX_RX2 Digital Volume" value="84" />
+    <ctl name="RX_RX0 Digital Volume" value="76" />
+    <ctl name="RX_RX1 Digital Volume" value="76" />
+    <ctl name="RX_RX2 Digital Volume" value="76" />
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
 
-    <ctl name="TX_DEC0 Volume" value="84" />
-    <ctl name="TX_DEC1 Volume" value="84" />
-    <ctl name="TX_DEC2 Volume" value="84" />
-    <ctl name="TX_DEC3 Volume" value="84" />
-    <ctl name="TX_DEC4 Volume" value="84" />
-    <ctl name="TX_DEC5 Volume" value="84" />
-    <ctl name="TX_DEC6 Volume" value="84" />
-    <ctl name="TX_DEC7 Volume" value="84" />
+    <ctl name="TX_DEC0 Volume" value="70" />
+    <ctl name="TX_DEC1 Volume" value="70" />
+    <ctl name="TX_DEC2 Volume" value="70" />
+    <ctl name="TX_DEC3 Volume" value="70" />
+    <ctl name="TX_DEC4 Volume" value="70" />
+    <ctl name="TX_DEC5 Volume" value="70" />
+    <ctl name="TX_DEC6 Volume" value="70" />
+    <ctl name="TX_DEC7 Volume" value="70" />
 
     <ctl name="ADC1 Volume" value="12" />
     <ctl name="ADC2 Volume" value="12" />
@@ -2541,7 +2541,7 @@
     </path>
 
     <path name="speaker">
-        <ctl name="SPK AMP PCM Gain" value="17" />
+        <ctl name="SPK AMP PCM Gain" value="7" />
         <ctl name="SPK PCM Source" value="DSP" />
 	<ctl name="Cirrus SE" value="Enable" />
         <ctl name="SPK Fast Use Case Delta File" value="spk_fast_switch1.txt" />
@@ -2692,7 +2692,7 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="SPK AMP PCM Gain" value="17" />
+        <ctl name="SPK AMP PCM Gain" value="7" />
         <ctl name="SPK PCM Source" value="DSP" />
 	<ctl name="Cirrus SE" value="Enable" />
         <ctl name="SPK Fast Use Case Delta File" value="spk_fast_switch2.txt" />
